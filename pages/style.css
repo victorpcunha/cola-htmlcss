@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap'); /* PADRÃO */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap'); /* TÍTULOS */
+
+:root {
+    --cor1: #7188F7; /* MAIS CLARA */
+    --cor2: #284AF5;
+    --cor3: #1F3AC2;
+    --cor4: #364175;
+    --cor5: #132375; /* MAIS ESCURA */
+    --fontepadrao:'Kanit', sans-serif;
+    --fontetitulos:'Montserrat', sans-serif;
+}
+
+body {
+    font-family: var(--fontetitulos);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+}
+
+body h1 {
+    font-family: var(--fontetitulos);
+    font-weight: 500;
+
+}
+
+header {
+    
+    color: white;
+    min-height: 110px;
+    min-width: 400px;
+    padding-top: 20px;
+}
+
+header h1 {
+    font-family: var(--fontetitulos);
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header p {
+    font-family: var(--fontepadrao);
+    font-size: 1em;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+nav {
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+main {
+    margin: auto;
+
+    height: 80vh;
+    min-width: 450px;
+    max-width: 1000px;
+
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+
+main p {
+    margin: 20px;
+}
+
+section a {
+    display: block;
+    text-align: center;
+}
+
+.links-conteudo {
+    color: white;
+    min-width: 100px;
+}
+
+
+footer {
+    
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+}
