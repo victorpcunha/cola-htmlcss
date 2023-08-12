@@ -16,64 +16,114 @@
     --cor3: #216585;
     --cor4: #124F6C;
     --cor5: #043953; /* MAIS ESCURA */
+    --cor6: #4E2890;
+    --cor-fonte-titulo: #d0ff48;
+    --cor-fonte-parag: #bcff8f;
     --fontepadrao: 'Source Code Pro', monospace;
     --fontetitulos:'Montserrat', sans-serif;
 }
 
-body {
 
-    background-color: var(--cor5);
-    color: white;
+body {
+   
+    background-image: linear-gradient(135deg, var(--cor5), var(--cor3));
 
     font-family: var(--fontepadrao);
-    line-height: 1.6em;
-    
+    line-height: 1.6em;    
 }
+
 
 header {
     min-height: 150px;
     padding-bottom: 5px;
+    
 }
 
 header h1 {
     padding: 40px 20px 0px 20px;
+    color: var(--cor-fonte-titulo);
     
     font-family: var(--fontetitulos);
     font-size: 2.4em;
     text-align: center;
-    text-shadow: 1px 1px 3px black;
-
     line-height: 35px;
 }
 
 header p {
     padding: 10px 20px;
-
-    font-size: 1.2em;
+    color: var(--cor-fonte-parag);
+    font-size: 1.4em;
     text-align: center;
-    text-shadow: 1px 1px 2px black;
 }
 
 main {
-    background-color: var(--cor4);
-
     min-width: 320px;
     max-width: 1000px;
     margin: auto;
     padding: 20px;
-
+    
+    color: var(--cor-fonte-main);
 }
 
 main h1 {
     padding-bottom: 15px;
-
+    color: var(--cor-fonte-titulo);
     text-align: center;
     font-size: 2.3em;
 }
 
 main p {
+    color: var(--cor-fonte-parag);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.img-link-separado {
+    padding-top: 30px;
+}
+
+.img-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-link img {
+    margin-right: 10px;
+}
+
+#css-img {
+    margin-right: 10px;
+}
+
+a {
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    color: var(--cor-fonte-parag);
+    font-family: var(--fontetitulos);
+    font-weight: bold;
+}
+
+a:hover  {
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition-duration: 1s;
+
+}
+
+footer {
+    color: var(--cor-fonte-parag);
+    margin-top: 18px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer a {
+    font-family: var(--fontepadrao);
     
-    text-align: justify;
-    text-indent: 20px;
-    
+}
+
+::selection {
+    background-color: var(--cor6);
 }

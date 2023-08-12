@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Estudos de HTML e CSS</title>
+    <link rel="shortcut icon" href="../image/icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,24 +15,27 @@
     </header>
     <main>
         <section>
-                <h1>BEM VINDOS!</h1>
+                <h1>SOBRE O PROJETO</h1>
                     <p>Eu estava aprendendo HTML e CSS e queria criar um projeto para poder praticar minhas habilidades.</p>
                     <p>Sempre que aprender algo novo, na parte de HTML e de CSS, irei atualizar esse projeto. Dessa forma, caso surja alguma dúvida, é possível acessar o conteúdo de qualquer lugar e verificar as informações por aqui. </p>
                     <p>Abaixo é possível acessar os conteúdo separados por HTML e CSS:</p>
             <article>
-                <a class="links-conteudo" href="conteudo-html.html">
-                    <img src="../image/HTML5.png" alt="ícone HTML5">Acessar conteúdo de HTML5
-                </a>
-                <br>
-                <a class="links-conteudo" href="conteudo-css.html">
-                    <img src="../image/CSS3.png" alt="ícone CSS3">Acessar conteúdo de CSS3
-                </a>
+                <div class="img-link-separado">
+                    <div class="img-link">
+                        <img src="../image/HTML5.png" alt="ícone HTML5">
+                        <a class="link" href="conteudo-html.html">CONTEÚDO DE HTML5</a>
+                    </div>
+                    <br>
+                    <div class="img-link" id="css-img">
+                        <img src="../image/CSS3.png" alt="ícone CSS3">
+                        <a class="links-conteudo" href="conteudo-css.html">CONTEÚDO DE CSS3</a>
+                    </div>
+                </div>
             </article>
-
         </section>
     </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/victorpcunha?tab=repositories" target="_blank" rel="external">Victor Cunha</a>.</p>
+    </footer>
 </body>
-<footer>
-    <p>Desenvolvido por Victor Cunha.</p>
-</footer>
 </html>
